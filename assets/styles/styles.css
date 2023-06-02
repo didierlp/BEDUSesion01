@@ -1,0 +1,71 @@
+p {
+    color: #46484c;
+    font-size: 20px;
+}
+
+h1{
+    color: #025157;
+}
+
+strong {
+    color: #8b8b8bcc
+}
+
+body {
+    text-align: center;
+    background-color: #fffbf7;
+}
+
+img {
+    width: 45%;
+    height: 25%;
+    justify-content: center;
+
+}
+
+button {
+    color: #fff;
+    background-color: #025157;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.header{
+    display: flex;
+    margin: 40px 20px;
+    font-family: sans-serif;
+    background-color: #025157 ;
+    height: 120PX;
+    color: #fff;
+    align-items: center;
+}
+
+.cabecera{
+    display: inline;
+    font-size: 25px;
+    margin: 0 25px;
+
+} 
+
+#logo{
+    width: 80px;
+    height: 95px;
+    justify-content:  left;
+    margin-top: 15px;
+
+}
+
+#boton-header{
+    width: 200px;
+    
+    background-color: #67b54b;
+    margin: 0 12px 35px 12px;
+    padding-bottom: 20px;
+    
+}
+
+
+[href="/login"]{
+   color:  #67b54b;
+}
