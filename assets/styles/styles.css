@@ -27,25 +27,16 @@ img {
 button {
     color: #fff;
     background-color: #025157;
-    width: 10em;
-    height: 3.2em;
-    border-radius: 0 10px 10px 0;
-    margin-left: -3px;
+   
 }
 
-#email-input{
-width: 20em;
-height: 3em;
-border-radius: 10px 0 0 10px; 
-margin-right: -3px;   
-}
 
-.container-no{
+.contenedor{
     display: flex;
     align-items: center;
 }
-.col{
-    margin: 10px;
+.columna{
+    margin: 30px;
 }
 #flecha{
     width: 5em;
@@ -64,41 +55,15 @@ video{
 }
 
 /* Header */
-
-a {
-    text-decoration: none;
-    color:#67b54b;
-  }
-
-  .navbar-item{
-    font-size: 2rem;
-  }
-.header {
-    display: flex;
-    font-family: sans-serif;
-    justify-content: space-around;
-    align-items: center;
-    background-color: #025157;
-    height: 120PX;
-    color: #fff;
-    
+.logo{
+    width: 6em;
+    height: 6em;
+    margin-left: 20px;
 }
 
-.login{
-    border: 2px solid bisque;
-}
-
-#logo {
-    width: 5em;
-    height: 5em;
-}
-
-#boton-header {
-    width: 200px;
-    background-color: #67b54b; 
-}
-
-
-[href="/login"] {
+.nav-link{
     color: #67b54b;
+    font-size: 1.5em;
+    
+    margin: 0 5px 0 5px ;
 }

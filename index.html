@@ -6,27 +6,48 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>La academia de Platón</title>
-  <link rel="stylesheet" href="./assets/styles/styles.css">
   <link rel="icon" href="./assets/img/greek 16px.png">
- 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+
 
 </head>
 
 <body>
-  <header class="header">
 
-    <!-- NavBarBootsrap -->
+<!-- NavBar -->
+
+<nav class="navbar navbar-expand-lg bg-body-transparent"  >
+  <div class="container-fluid" >
     <a href="/index.html"><img class="logo" id="logo" src="./assets/img/greek.png" alt="filosofo griego imagen">
     </a>
-    <a class="navbar-item" href="">Aprende</a>
-    <a class="navbar-item" href="">Explora</a>
-    <a class="navbar-item" href="">Recursos</a>
-    <a class="navbar-item" href="">Acerca de Nosotros</a>
-    <a class="navbar-item" href="/login">Iniciar Sesión</a>
-    <button id="boton-header" type="submit">Empieza tu prueba gratuita</button>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link" aria-current="page" href="#">Aprende</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Recursos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Acerca de nosotros</a>
+        </li>
+        
+      </ul>
+      <form class="d-flex" role="search">
 
-  </header>
-  <section>
+          <a class="nav-link" href="/login">Iniciar Sesión</a>
+        <button  class="btn btn-outline-success" type="submit">Empieza tu prueba gratuita</button>
+      </form>
+    </div>
+  </div>
+</nav>
+
+  <section class=".container">
     <br>
     <br>
     <h1>¿Te interesa conocer los origenes del pensamiento?
@@ -39,7 +60,7 @@
     </p>
 
     <br>
-    <form><input id="email-input" type="email">
+    <form><input class="email-input" type="email">
       <button type="submit">Enviar</button>
     </form>
     <p>
@@ -58,8 +79,8 @@
 
 
 
-  <section class="container-no">
-    <article class="col">
+  <section class="contenedor">
+    <article class="columna">
       <video width="534" height="401" controls poster="./assets/video/portada-video.png">
         <source type="video/mp4" src="./assets/video/La Filosofía de Platón - Todos los Conceptos Fundamentales.mp4">
 
@@ -67,26 +88,34 @@
       <p id="platon">Platón es el padre de la filosofía</p>
       <img id="flecha" src="/assets/img/5bf110f14d50531aaca26c251c3441aa-doodle-de-flecha-vertical.png" alt="flecha">
     </article>
-    <article class="col">
+    <article class="columna">
       <section>
         <br>
         <br>
         <h1>¿Únete a nuestra aventura filosófica y abre tu mente a nuevas posibilidades
-        <br>
-        <p>Te invitamos a embarcarte en este apasionante viaje filosófico con nosotros. ¡Explora, aprende y desafía tus propias creencias! La filosofía está al alcance de todos, y juntos podemos descubrir nuevas perspectivas y enriquecer nuestra comprensión del mundo. ¡Bienvenido a la aventura filosófica!
-        </p>
+          <br>
+          <p>Te invitamos a embarcarte en este apasionante viaje filosófico con nosotros. ¡Explora, aprende y desafía
+            tus propias creencias! La filosofía está al alcance de todos, y juntos podemos descubrir nuevas perspectivas
+            y enriquecer nuestra comprensión del mundo. ¡Bienvenido a la aventura filosófica!
+          </p>
 
-        <br>
-        <form><input id="email-input" type="email">
-          <button type="submit">Enviar</button>
-        </form>
-        
+          <br>
+          <form>
+            <input class="email-input" type="email">
+            <button type="submit">Enviar</button>
+          </form>
+
       </section>
     </article>
   </section>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
 </body>
-
-
-
-
 </html>
