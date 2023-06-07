@@ -3,7 +3,7 @@ p {
     font-size: 20px;
 }
 
-h1{
+h1 {
     color: #025157;
 }
 
@@ -13,7 +13,7 @@ strong {
 
 body {
     text-align: center;
-    background-color: #fffbf7;
+    background-color: #fffbf1;
 }
 
 img {
@@ -31,41 +31,47 @@ button {
     border-radius: 10px;
 }
 
-.header{
+#email-input{
+width: 20em;
+height: 2em;    
+}
+
+/* Header */
+
+a {
+    text-decoration: none;
+    color:#67b54b;
+  }
+
+  .navbar-item{
+    font-size: 2rem;
+  }
+.header {
     display: flex;
-    margin: 40px 20px;
     font-family: sans-serif;
-    background-color: #025157 ;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #025157;
     height: 120PX;
     color: #fff;
-    align-items: center;
+    
 }
 
-.cabecera{
-    display: inline;
-    font-size: 25px;
-    margin: 0 25px;
-
-} 
-
-#logo{
-    width: 80px;
-    height: 95px;
-    justify-content:  left;
-    margin-top: 15px;
-
+.login{
+    border: 2px solid bisque;
 }
 
-#boton-header{
+#logo {
+    width: 5em;
+    height: 5em;
+}
+
+#boton-header {
     width: 200px;
-    
-    background-color: #67b54b;
-    margin: 0 12px 35px 12px;
-    padding-bottom: 20px;
-    
+    background-color: #67b54b; 
 }
 
 
-[href="/login"]{
-   color:  #67b54b;
+[href="/login"] {
+    color: #67b54b;
 }
