@@ -5,6 +5,7 @@ p {
 
 h1 {
     color: #025157;
+    font-size: 3rem;
 }
 
 strong {
@@ -26,14 +27,40 @@ img {
 button {
     color: #fff;
     background-color: #025157;
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
+    width: 10em;
+    height: 3.2em;
+    border-radius: 0 10px 10px 0;
+    margin-left: -3px;
 }
 
 #email-input{
 width: 20em;
-height: 2em;    
+height: 3em;
+border-radius: 10px 0 0 10px; 
+margin-right: -3px;   
+}
+
+.container-no{
+    display: flex;
+    align-items: center;
+}
+.col{
+    margin: 10px;
+}
+#flecha{
+    width: 5em;
+    height: 3em;
+    opacity: 50%;
+
+}
+#platon{
+    display: inline;
+    color: #46484c;
+    font-size: 20px;
+}
+
+video{
+    display: block;
 }
 
 /* Header */
