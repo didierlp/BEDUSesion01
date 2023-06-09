@@ -1,25 +1,27 @@
 /* Header */
-.logo{
+.logo {
     width: 6em;
     height: 6em;
     margin-left: 20px;
 }
 
-.navbar{
+.navbar {
     position: fixed;
-    background-color: #fffbf1 ;
+    background-color: #fffbf1;
     top: 0;
     left: 0;
     right: 0;
-    
+    z-index: 100;
+
 }
-.nav-link{
+
+.nav-link {
     color: #67b54b;
     font-size: 1.5em;
     font-weight: 600;
-    margin: 0 5px 0 5px ;
+    margin: 0 5px 0 5px;
 }
- 
+
 /* contenedor 1 */
 
 p {
@@ -51,41 +53,45 @@ img {
 button {
     color: #fff;
     background-color: #025157;
-   
+
 }
 
-.contenedor-1{
+.contenedor-1 {
     margin-top: 5em;
 }
 
-.contenedor-2{
+.contenedor-2 {
     display: flex;
     align-items: center;
 }
-.columna{
+
+.columna {
     margin: 30px;
 }
-#flecha{
+
+#flecha {
     width: 5em;
     height: 3em;
     opacity: 50%;
 
 }
-#platon{
+
+#platon {
     display: inline;
     color: #46484c;
     font-size: 20px;
 }
 
-video{
+video {
     display: block;
 }
 
-.e-input{
+.e-input {
     width: 5em;
     height: .8em;
 }
-.b-input{
+
+.b-input {
     height: 1.5em;
     font-size: .5em;
 }
@@ -93,29 +99,37 @@ video{
 
 /* Tarjetas */
 
-.tarjetas{
-    padding: 2em 3em;
+.tarjetas {
+    padding: 2.5em 3.5em;
     display: grid;
-    background: linear-gradient(180deg, rgba(255,251,241,1) 19%, rgba(2,81,87,1) 73%);
+    background: linear-gradient(180deg, rgba(255, 251, 241, 1) 19%, rgba(2, 81, 87, 1) 73%);
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     grid-gap: 2em;
     text-align: justify;
+    z-index: 200;
 
 }
-.img-card{
+
+.img-card {
     width: 10%;
     display: flex;
+    z-index: 200;
 }
 
-.grid-item{
-    padding: 1em 2em;
+.grid-item {
+    padding: 1em 2em 2em 2em;
+    z-index: 200;
 }
+
 article a {
     font-size: 1.5em;
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
+    z-index: 200;
 }
-article img{
+
+article img {
     justify-items: left;
+    z-index: 200;
 }
