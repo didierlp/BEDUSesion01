@@ -16,38 +16,39 @@
 
 <body>
 
-<!-- NavBar -->
+  <!-- NavBar -->
 
-<nav class="navbar navbar-expand-lg bg-body-transparent"  >
-  <div class="container-fluid" >
-    <a href="/index.html"><img class="logo" id="logo" src="./assets/img/greek.png" alt="filosofo griego imagen">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
-        <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="#">Aprende</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Recursos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Acerca de nosotros</a>
-        </li>
-        
-      </ul>
-      <form class="d-flex" role="search">
+  <nav class="navbar navbar-expand-lg bg-body-transparent">
+    <div class="container-fluid">
+      <a href="/index.html"><img class="logo" id="logo" src="./assets/img/greek.png" alt="filosofo griego imagen">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-auto ">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="#">Aprende</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Recursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Acerca de nosotros</a>
+          </li>
+
+        </ul>
+        <form class="d-flex" role="search">
 
           <a class="nav-link" href="/login">Iniciar Sesión</a>
-        <button  class="btn btn-outline-success" type="submit">Empieza tu prueba gratuita</button>
-      </form>
+          <button class="btn btn-outline-success" type="submit">Empieza tu prueba gratuita</button>
+        </form>
+      </div>
     </div>
-  </div>
-</nav>
+  </nav>
 
-  <section class=".container">
+  <section class="contenedor-1">
     <br>
     <br>
     <h1>¿Te interesa conocer los origenes del pensamiento?
@@ -79,7 +80,7 @@
 
 
 
-  <section class="contenedor">
+  <section class="contenedor-2">
     <article class="columna">
       <video width="534" height="401" controls poster="./assets/video/portada-video.png">
         <source type="video/mp4" src="./assets/video/La Filosofía de Platón - Todos los Conceptos Fundamentales.mp4">
@@ -101,21 +102,60 @@
 
           <br>
           <form>
-            <input class="email-input" type="email">
-            <button type="submit">Enviar</button>
+            <input class="e-input" type="email">
+            <button class="b-input" type="submit">Enviar</button>
           </form>
 
       </section>
     </article>
   </section>
 
+  <section class="tarjetas">
+    <article class="card card1">
+     <div class="grid-item">
+      <img class="img-card" src="./assets/img/philosopher-card.png" alt="philosopher">
+      <h3>Metafísica</h3>
+      <p>Se ocupa de las preguntas fundamentales sobre la realidad, como la naturaleza de la existencia, la realidad
+        última, la relación entre mente y materia, y la naturaleza del tiempo y el espacio.</p>
+        <a href="https://www.youtube.com/watch?v=fWHIsIIQtkA">¿Qué es la metafísica? →</a>
+      </div>
+    </article>
+    <article class="card card2">
+      <div class="grid-item">
+        <img class="img-card"  src="./assets/img/morality-card.png" alt="morality">
+        <h3>Ética</h3>
+        <p>Examina los conceptos de lo correcto y lo incorrecto, la moralidad y los principios que guían la conducta
+          humana. Se ocupa de preguntas sobre la naturaleza del bien y el mal, los fundamentos de los valores morales y
+          cómo deberíamos comportarnos.</p>
+          <a href="https://www.youtube.com/watch?v=sQ_DWG34UOE"> ¿Qué es la ética? →</a>
+        </div>
+    </article>
+    <article class="card card3">
+      <div class="grid-item">
+        <img class="img-card"  src="./assets/img/thought-card.png" alt="logic">
+        <h3>Lógica</h3>
+        <p> Se ocupa del estudio del razonamiento válido y la estructura del pensamiento. Analiza las reglas de inferencia
+          y los métodos para evaluar la validez de los argumentos.</p>
+          <a href="https://www.youtube.com/watch?v=va3kFdSVlrk">¿Qué es la lógica? →</a>
+        </div>
+    </article>
+    <article class="card card4">
+      <div class="grid-item">
+        <img class="img-card"  src="./assets/img/philosophy-card.png" alt="phylosophy">
+        <h3>Epistemología
+        </h3>
+        <p>Estudia la naturaleza del conocimiento, las fuentes del conocimiento, los límites del conocimiento humano y los
+          métodos de investigación y razonamiento.</p>
+        </div>
+        <a href="https://www.youtube.com/watch?v=pzoRWDX0DRM">¿Qué es la epistemología? →</a>
+    </article>
+  </section>
 
 
-
-
-
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
