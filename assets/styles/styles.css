@@ -171,6 +171,7 @@ article img {
     
     article.card{
         height: auto;
+        overflow-y:scroll;
     }
     .contenedor-1 {
         margin-top: 7em;
