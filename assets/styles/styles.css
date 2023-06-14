@@ -11,7 +11,7 @@
     top: 0;
     left: 0;
     right: 0;
-    z-index: 100;
+    z-index: 3;
 
 }
 
@@ -57,7 +57,7 @@ button {
 }
 
 .contenedor-1 {
-    margin-top: 5em;
+    margin-top: 7em;
 }
 
 .contenedor-2 {
@@ -106,19 +106,19 @@ video {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     grid-gap: 2em;
     text-align: justify;
-    z-index: 200;
+    z-index: 1;
 
 }
 
 .img-card {
     width: 10%;
     display: flex;
-    z-index: 200;
+    z-index: 1;
 }
 
 .grid-item {
     padding: 1em 2em 2em 2em;
-    z-index: 200;
+    z-index: 1;
 }
 
 article a {
@@ -126,10 +126,94 @@ article a {
     color: #67b54b;
     font-weight: 600;
     text-decoration: none;
-    z-index: 200;
+    z-index: 1;
 }
 
 article img {
     justify-items: left;
-    z-index: 200;
+    z-index: 1;
 }
+
+
+
+
+
+/* Media Queries */
+
+@media (max-width: 576px) {
+    h1 {
+        font-size: 30px;
+      }
+
+      .contenedor-2{
+        flex-direction: column;
+      }
+
+      video{
+        width: 100%;
+      }
+
+      .tarjetas{
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+       
+      }
+      
+    .img-card {
+        width: 40%;
+        
+        z-index: 1;
+    }
+    img {
+        width: 70%;
+        justify-content: center;
+    
+    }
+    
+    article.card{
+        height: auto;
+    }
+    .contenedor-1 {
+        margin-top: 7em;
+    }
+
+}
+
+
+
+
+@media (max-width: 992px) {
+    h1 {
+        font-size: 30px;
+      }
+
+      .contenedor-2{
+        flex-direction: column;
+      }
+
+      video{
+        width: 100%;
+      }
+
+      .tarjetas{
+        grid-template: repeat(4, 1fr) / repeat(1, 1fr);
+       
+      }
+      
+    .img-card {
+        width: 15%;
+        display: flex;
+        display: inline;
+        z-index: 1;
+    }
+    img {
+        width: 70%;
+        justify-content: center;
+    
+    }
+    .contenedor-1 {
+        margin-top: 9em;
+    }
+    
+
+}
+
