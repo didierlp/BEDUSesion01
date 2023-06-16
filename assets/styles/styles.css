@@ -134,11 +134,45 @@ article img {
     z-index: 1;
 }
 
-#img-carusel{
+/* Acordeon */
+.accordion{
+    margin-top: 10rem !important;
     
 }
 
+.accordion-button, .accordion-body, .accordion-header{
+    background-color: #fffbf1;
+}
+.accordion-button {
+    
+    font-weight: bold;
+}
 
+.grid-content{
+    display: grid;
+    grid-template-rows: 2fr 8fr ;
+    grid-template-columns:8fr 2fr;
+    grid-template-areas: 
+    " autores-grid boton-grid"
+    "p-grid img-grid"
+    ;
+
+}
+.p-grid{
+    grid-area: p-grid;
+}
+.img-grid{
+    grid-area: img-grid;
+    width: 100%;
+    height: auto;
+}
+
+.boton-grid{
+    grid-area: boton-grid;
+}
+.autores-grid{
+    grid-area: autores-grid;
+}
 
 /* Media Queries */
 
