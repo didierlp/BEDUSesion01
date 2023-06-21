@@ -7,17 +7,6 @@
 /* importamos el archivo global.scss 
 donde definimos variables, el * se utiliza para que se
 respeten los nombres de las variables */
-.blog {
-  height: 100vw;
-  width: 50vw;
-  background-color: rgb(19, 198, 128);
-}
-@media (orientation: landscape) {
-  .blog {
-    background-color: rgb(30, 182, 43);
-  }
-}
-
 /* Anidación */
 div ul {
   list-style: circle;
@@ -31,6 +20,28 @@ div ul span {
 div p {
   color: blue;
   font-size: 2rem;
+}
+
+/*  Mixin */
+.blog2 {
+  height: 300px;
+  width: 300px;
+  background-color: blue;
+}
+
+.blog {
+  /* height: $size;
+  width: $ancho;
+  background-color: $color; */
+  height: 50vw;
+  width: 50vw;
+  background-color: rgb(19, 198, 128);
+  /* condicional en sass */
+}
+@media (orientation: landscape) {
+  .blog {
+    background-color: rgb(30, 182, 50);
+  }
 }
 
 /*# sourceMappingURL=output.css.map */

@@ -10,17 +10,6 @@
 donde definimos variables, el * se utiliza para que se
 respeten los nombres de las variables */
 
-.blog{
-    height: $size;
-    width: $ancho;
-    background-color: $color;
-    
-    @media (orientation: landscape) {
-        background-color: $color-verde;
-
-    }
-}
-
 /* Anidación */
 
 div{
@@ -39,6 +28,33 @@ div{
     }
 }
 
-@media screen {
+/*  Mixin */ 
+@mixin repetido($tamano, $color){
+    height: $tamano;
+    width: $tamano;
+    background-color: $color;
+}
+
+.blog2{
+    @include repetido(300px, blue);
+}
+
+
+.blog{
+    /* height: $size;
+    width: $ancho;
+    background-color: $color; */
+    @include repetido($ancho, $color);
+
+    @media (orientation: landscape) {
+        background-color: $color-verde;
+
+    }
+
+    /* condicional en sass */
+    @if (false){
+        border: 10px solid magenta;
+
+    }
     
 }
