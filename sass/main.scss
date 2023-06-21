@@ -1,0 +1,44 @@
+/* Comando para complirar en terminal de scss a css
+ sass --watch main.scss output.css
+ donde main.scss es mi archivo de entrada y output.css 
+ es mi archivo compilado de salida que ligaré a mi html
+ */
+
+
+
+@use 'global' as *; /* importamos el archivo global.scss 
+donde definimos variables, el * se utiliza para que se
+respeten los nombres de las variables */
+
+.blog{
+    height: $size;
+    width: $ancho;
+    background-color: $color;
+    
+    @media (orientation: landscape) {
+        background-color: $color-verde;
+
+    }
+}
+
+/* Anidación */
+
+div{
+    ul{
+        list-style: circle;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        color: orangered;
+        span{
+            color: $color-negro;
+            font-size:3rem
+        }
+    }
+    p{
+        color: blue;
+        font-size: 2rem;
+    }
+}
+
+@media screen {
+    
+}
