@@ -1,0 +1,61 @@
+h1 {
+  color: steelblue;
+}
+
+/* nesting */
+section p {
+  color: steelblue;
+}
+section p:hover {
+  color: #aaa;
+}
+
+/*  */
+.logo {
+  position: relative;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.logo {
+  animation-name: animacion;
+}
+@keyframes animacion {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+  50% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    opacity: 20%;
+    top: 0;
+  }
+}
+.logo:hover {
+  width: 7rem;
+  height: 7rem;
+}
+
+.logo {
+  animation-name: animacion;
+}
+@keyframes animacion {
+  0% {
+    left: 0;
+    top: 0px;
+  }
+  50% {
+    left: 0;
+    top: 20px;
+  }
+  100% {
+    opacity: 20%;
+    top: 0;
+  }
+}
+
+/*# sourceMappingURL=style-Sass.css.map */

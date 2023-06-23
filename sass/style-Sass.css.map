@@ -1,0 +1,1 @@
+{"version":3,"sourceRoot":"","sources":["style.scss","_parcial.scss"],"names":[],"mappings":"AAKA;EACI,OCNS;;;ADUb;AAGI;EACI,OCdK;;ADiBT;EACI,OAfI;;;AAoBZ;AAEA;EACK;EACA;EACD;EACA;;;AAKA;EACI;;AAEA;EACK;IAEG;IACA;;EAGH;IACG;IACA;;EAEH;IAAO;IACR;;;AAOA;EACI;EACA;;;AAxBZ;EACI;;AAEA;EACK;IAEG;IACA;;EAGH;IACG;IACA;;EAEH;IAAO;IACR","file":"style-Sass.css"}

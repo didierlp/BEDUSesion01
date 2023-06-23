@@ -1,0 +1,64 @@
+@use 'parcial';
+
+
+$variable1: #aaa;
+
+h1{
+    color: parcial.$color-azul;
+}
+
+
+/* nesting */
+
+section{
+    p{
+        color: parcial.$color-azul
+    }
+
+    & p:hover{
+        color: $variable1;
+    }
+    
+}
+
+/*  */
+
+.logo{
+     position: relative;
+     animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@for $iterador from 1 through 2{
+
+    .logo{
+        animation-name: animacion;
+
+        @keyframes animacion {
+             0% {
+               
+                left: 0 ;
+                top: 0px;
+             }
+
+             50%{
+                left: 0;
+                top :20px
+             }
+             100% { opacity: 20%;
+            top: 0}
+            
+            
+        }
+
+
+        @if $iterador == 1 {
+            &:hover{
+                width: 7rem;
+                height: 7rem;
+            }
+        }
+
+    }
+}
