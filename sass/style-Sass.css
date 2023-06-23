@@ -1,3 +1,37 @@
+@charset "UTF-8";
+/* Comando para complirar en terminal de scss a css
+ sass --watch main.scss output.css
+ donde main.scss es mi archivo de entrada y output.css 
+ es mi archivo compilado de salida que ligaré a mi html
+ */
+/* @use 'global' as *;  importamos el archivo global.scss 
+ donde definimos variables, el * se utiliza para que se
+ respeten los nombres de las variables */
+/*
+ Mixin  
+@mixin repetido($tamano, $color){
+    height: $tamano;
+    width: $tamano;
+    background-color: $color;
+}
+
+.blog2{
+    @include repetido(300px, blue);
+}
+
+
+.blog{
+     height: $size;
+    width: $ancho;
+    background-color: $color; 
+    @include repetido($ancho, $color);
+
+    @media (orientation: landscape) {
+        background-color: $color-verde;
+
+    }
+}
+*/
 h1 {
   color: steelblue;
 }
@@ -15,7 +49,7 @@ section p:hover {
   position: relative;
   animation-duration: 2s;
   animation-iteration-count: infinite;
-  animation-direction: alternate;
+  animation-direction: reverse;
 }
 
 .logo {
@@ -33,6 +67,12 @@ section p:hover {
   100% {
     opacity: 20%;
     top: 0;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 .logo:hover {
@@ -55,6 +95,37 @@ section p:hover {
   100% {
     opacity: 20%;
     top: 0;
+  }
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+#img-filosofos {
+  transition: transform 0.3s ease-in-out;
+}
+
+#img-filosofos:hover {
+  transform: scale(1.2);
+  opacity: 50%;
+}
+
+.img-card {
+  animation: animacionImagen 1s infinite alternate;
+}
+
+@keyframes animacionImagen {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+  100% {
+    transform: scale(0.8);
   }
 }
 
